@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .custom-button {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h4>Change bgColor w.r.t selected button</h4>
+      <div class="container d-flex">
+       <div class="custom-button" style="background-color: grey;" id="grey">
+          Grey
+       </div>
+       <div class="custom-button" style="background-color: green;" id="green">
+          Green
+       </div>
+       <div class="custom-button" style="background-color: orange;" id="orange">
+          Orange
+       </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const buttonList = document.querySelectorAll('.custom-button');
+    const bg = document.querySelector('body');
+    console.log(buttonList);
+    buttonList.forEach(button =>{
+      console.log(button);
+      button.addEventListener('click', function(e){
+        console.log(e);
+        console.log(e.target);
+        console.log(e.target.id);
+        if(e.target.id === 'green'){
+          bg.style.background = 'green';
+        }else if(e.target.id === 'grey'){
+          bg.style.background = 'grey';
+        }else{
+          bg.style.background = 'orange';
+        }
+      });
+    });
+  </script>
+</html>
