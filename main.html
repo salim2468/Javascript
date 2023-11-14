@@ -12,43 +12,35 @@
       crossorigin="anonymous"
     />
     <style>
-      .custom-container {
-        width: 100%;
-        height: 30%;
-        border: 1px solid black;
-        margin: 15px 0;
-        padding: 4px;
+      body{
+        background: black;
+        color: aliceblue;
       }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+
     </style>
   </head>
 
   <body>
     <div class="container">
       <h4>List of Topic</h4>
-      <ul class="list-group">
+      <ul class="list-group" >
 
-        <li class="list-group-item"><a href="calculator/index.html">Calculator</a></li>
+        <a href="calculator/index.html"><li class="list-group-item" style="background: gray;">Calculator</li></a>
 
-        <li class="list-group-item"><a href="/show hide on select of radio button/index.html">Show hide Container on the basis of selected Radio button</a></li>
-        <li class="list-group-item"><a href="/changing bgColor w.r.t selected button/index.html">Changing BGcolor w.r.t selected button</a></li>
-        <li class="list-group-item"><a href="#">A second item</a></li>
+        <a href="/show hide on select of radio button/index.html"><li class="list-group-item" style="background: gray;">Show hide Container on the basis of selected Radio button</li></a>
+        
+        <a href="/changing bgColor w.r.t selected button/index.html"><li class="list-group-item" style="background: gray;">Changing BGcolor w.r.t selected button</li></a>
+       
 
       </ul>
     </div>
   </body>
 
   <script>
-    const radioFirstSelection = document.getElementById("0");
-    const radioSecondSelection = document.getElementById("1");
-    function onChange() {
-      if (radioFirstSelection.checked) {
-        document.getElementById("1con").style.display = "block";
-        document.getElementById("2con").style.display = "none";
-      }
-      if (radioSecondSelection.checked) {
-        document.getElementById("2con").style.display = "block";
-        document.getElementById("1con").style.display = "none";
-      }
-    }
+    
   </script>
 </html>
