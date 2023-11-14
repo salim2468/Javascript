@@ -1,0 +1,29 @@
+
+body{
+    background: lightblue;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 17px;
+    background: bisque;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+#increment-btn{
+    background-color:antiquewhite;
+}
+
+#save-btn{
+    background-color:beige;
+}
+
+input{
+    padding: 4px;
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid black;
+}
